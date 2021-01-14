@@ -58,7 +58,7 @@ header{
     min-height: 70px;
 }
 .header-title{
-    width: 50%;
+    width: 100%;
     height: 10vh;
 }
 .header-title span{
@@ -66,7 +66,7 @@ header{
     margin-left: 1em;
     color: var(--font-color1);
     font-weight:600;
-    font-size: calc(0.7em + 1vw);
+    font-size: calc(1em + 1vw);
 }
 nav{
     width: 50%;
@@ -99,6 +99,13 @@ nav .nav-links{
 .inner-div2{
     background-color: var(--secondary-bg-color);
     height: 45.1vh;
+    display: flex;
+}
+footer{
+    background-color: #6C63FF;
+    color: var(--primary-bg-color);
+    text-align: center;
+    height: 5vh;
 }
 .main-content-form{
     background-color: var(--form-bg-color);
