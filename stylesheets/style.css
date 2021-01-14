@@ -66,7 +66,7 @@ header{
     margin-left: 1em;
     color: var(--font-color1);
     font-weight:600;
-    font-size: calc(1em + 1vw);
+    font-size: calc(0.7em + 1vw);
 }
 nav{
     width: 50%;
@@ -88,6 +88,7 @@ nav .nav-links{
 .nav-links li a{
     text-decoration: none;
     color: var(--font-color1);
+    font-size: calc(0.7em + 1vw);
     font-weight: 600;
 }
 
