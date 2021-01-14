@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body>
+    <div class="loading hidden">
+        <div class="loader">
+        <img src="./images/loading.svg"></img>
+        </div>
+    </div>
+    <header>
+        <div class="header-title">
+             <span>Currency Converter</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Latest</a></li>
+                <li><a href="#">History</a></li>
+            </ul>
+        </nav>
+    </header>
+  <div class="main-div">
+      <div class="main-content-form ">
+        <div class="currency-form">
+            <div class="form-wrapper">
+               <input type="number" class="amount-input" min="0" placeholder="Amount">
+            </div>
+
+            <div class="form-wrapper">
+            <select class="your-currency">
+                <option value="0">Your currency</option>
+            </select>
+        </div>
+        <div class="form-wrapper">
+            <select class="another-currency">
+                <option value="0">Another Currency</option>
+            </select>
+        </div>
+        
+        </div>
+        <div class="button-convert">
+            <button class="btn" onclick=convert()>Convert</button>
+        </div>
+        <div class="details hidden">
+            <section class="details-value">
+                <span class="amount-equal">500 CND IS </span>
+                <span class="conversion-value">5000 EUR</span>
+            </section>
+            <section class="conversion-rate ">
+                <span class="rate1">1 CAD = 100</span>
+                <span class="rate2">1 EUR = 0.5</span>
+            </section>
+        </div>
+        <section class="date">
+            <div class="date-details">
+                <span class="date-desc">LATEST CONVERSION RATE AS OF</span>
+                <span class="exact-date">August 20,2020</span>
+            </div>
+        </section>
+      </div>
+    <div class="inner-div1"></div>
+    <div class="inner-div2"></div>
+  </div>
+</body>
+<script src="./scripts/converter.js"></script>
+<script src="./scripts/listener.js"></script>
+</html>
