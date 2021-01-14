@@ -15,7 +15,7 @@ const API_KEY = 'a7a71c7fa7ff513e89541de6e7994c1d';
 
 fetchCurrencies = async()=>{
     loading.className = "loading";
-    const response = await fetch(`http://data.fixer.io/api/latest?access_key=${API_KEY}`);
+    const response = await fetch(`https://data.fixer.io/api/latest?access_key=${API_KEY}`);
     return response.json()
 }
 
