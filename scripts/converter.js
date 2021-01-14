@@ -11,11 +11,10 @@ const rate2 = document.querySelector('.rate2')
 const detailtab = document.querySelector('.details')
 const contentForm = document.querySelector('.main-content-form')
 let isAnimationExecuted = false;
-const API_KEY = 'a7a71c7fa7ff513e89541de6e7994c1d';
 
 fetchCurrencies = async()=>{
     loading.className = "loading";
-    const response = await fetch(`https://data.fixer.io/api/latest?access_key=${API_KEY}`);
+    const response = await fetch(`https://api.exchangeratesapi.io/latest`);
     return response.json()
 }
 
